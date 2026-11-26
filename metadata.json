@@ -1,0 +1,6 @@
+{
+  "name": "Hikari Pool Demo",
+  "description": "100% backend Spring Boot Maven example with HikariCP connection pool and in-memory H2 database.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
