@@ -13,7 +13,7 @@ HikariCP is a fast, lightweight JDBC connection pool for Java. Instead of openin
 - **connection-timeout (How long a passenger waits for a taxi):**
   Suppose this is 20000 milliseconds (20 seconds). All 10 taxis are busy carrying passengers, and a new passenger steps up. If no taxi becomes free within 20 seconds, the system gives up and throws a timeout error.
 
-- **idle-timeout (How long an extra taxi sits empty before leaving):**
+- **idle-timeout (How long an extra taxi sits empty before leaving)-the empty connections leave (close):**
   Suppose maximum-pool-size is 10 and minimum-idle is 2. During a rush, 8 taxis were out, and now things are quiet again. Any extra taxis above 2 that sit empty for longer than idle-timeout can leave so they do not waste resources.
 
 - **max-lifetime (Maximum total lifespan of a taxi before replacement):**
